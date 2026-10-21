@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.0",
+  "study_date": "2026-10-21",
+  "scope": "icons_and_callouts",
+  "verification": {
+    "actual_viewed": true,
+    "view_method": "tools.view_image forwarded with functions.image",
+    "images_viewed": 12,
+    "image_dimensions_method": "Pillow Image.size",
+    "layout_measurement_method": "visual estimate only",
+    "font_identified": false,
+    "precise_font_size_measured": false,
+    "precise_stroke_width_measured": false,
+    "generated_image": false
+  },
+  "cases": [
+    {
+      "case_id": "PP-B02-C01",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b02-c01.jpg",
+      "actual_pixels": [
+        1606,
+        2007
+      ],
+      "observed": {
+        "methods": [
+          "bottom_three_feature_groups",
+          "outline_icons",
+          "outline_circle_container",
+          "icon_left_label_right"
+        ],
+        "color": "white",
+        "alignment": "icon center aligned with two-line label block center; groups share horizontal level",
+        "background": "icons and labels over darker carpet; no separate large card",
+        "visual_estimates": {
+          "circle_diameter_pct_canvas_width": 5,
+          "visible_label_glyph_height_pct_canvas_width": "2-3"
+        }
+      },
+      "suggested_prompt": "底部横排三组功能信息，统一细线圆形图标左置、两行固定标签右置；图标圆心对齐两行文字整体中心，组内距小于组间距，背景减少纹理并保持白字对比。",
+      "common_misuse": [
+        "same-row icons with mixed 3D/outline/filled styles",
+        "icon aligned only to first text line",
+        "too close to canvas edge"
+      ],
+      "source_sha256": "e5ec1f73b4f544ac97d8661d4adacb4832053a23312e2b96abcb4dfe191e6aa7",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b02-c01.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b02-c01.jpg"
+    },
+    {
+      "case_id": "PP-B03-C02",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b03-c02.jpg",
+      "actual_pixels": [
+        1600,
+        2000
+      ],
+      "observed": {
+        "methods": [
+          "three_row_comparison",
+          "vs_circle",
+          "small_cross_overlay",
+          "white_circle_feature_badge",
+          "dashed_dimension_double_arrow"
+        ],
+        "color": "left gray; right cyan; black or white dimension labels according to background",
+        "alignment": "row-paired comparison; circular feature icons above centered captions",
+        "visual_estimates": {
+          "feature_badge_diameter_pct_canvas_width": 10,
+          "vs_diameter_pct_canvas_width": 6
+        },
+        "checkmark_observed": false
+      },
+      "suggested_prompt": "每行左右只比较同一维度，行缝放小型 VS 圆徽章；左侧灰色线描图标右下加小圆叉标，右侧强调色图标置于白色圆底、固定标签位于圆内下方。尺寸双箭头端点对应实际测量边界，数值居中。",
+      "common_misuse": [
+        "unrelated measures in one comparison row",
+        "copying example brand or numerical claims",
+        "claiming checkmark observed"
+      ],
+      "source_sha256": "bf813f126445da3407c7daa037153366bd89bf10034e1e898e5425116384f4dc",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c02.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c02.jpg"
+    },
+    {
+      "case_id": "PP-B03-C03",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b03-c03.jpg",
+      "actual_pixels": [
+        1600,
+        2000
+      ],
+      "observed": {
+        "methods": [
+          "single_function_badge",
+          "solid_cyan_circle_container",
+          "white_outline_lock",
+          "subtle_outer_ring"
+        ],
+        "alignment": "short label centered beneath badge",
+        "placement": "right of person at shoulder level in background space",
+        "leader_line_present": false,
+        "visual_estimates": {
+          "badge_diameter_pct_canvas_width": 11
+        }
+      },
+      "suggested_prompt": "在人物外侧背景空位放一个强调色圆底、白色线描功能图标，固定标签居中位于圆下；保留轻薄外环，不遮挡脸、手或控制区，不把徽章画成设备真实按钮。",
+      "common_misuse": [
+        "large badge across body",
+        "oversized glow",
+        "unsupported safety or certification meaning"
+      ],
+      "source_sha256": "66e0725f95c5e13c212a088a9576236698804442dc6d7969c81aded809f2e937",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c03.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c03.jpg"
+    },
+    {
+      "case_id": "PP-B03-C04",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b03-c04.jpg",
+      "actual_pixels": [
+        1600,
+        2000
+      ],
+      "observed": {
+        "methods": [
+          "two_column_three_row_state_cards",
+          "translucent_dark_card",
+          "circle_icon_above_heading_and_body"
+        ],
+        "alignment": "icon, bold heading and body share left padding; paired rows aligned",
+        "color": "left gray icon, right cyan icon; white circle backing; white type",
+        "visual_estimates": {
+          "card_width_pct_canvas_width": 29,
+          "circle_diameter_pct_canvas_width": "6-7"
+        }
+      },
+      "suggested_prompt": "两列状态卡同宽等距、逐行对应；每卡沿同一左边线依次放圆底线描图标、粗体标签和较小说明，半透明深色卡保留背景主色但抑制纹理，中央主体与作用部位保持清楚。",
+      "common_misuse": [
+        "card content drifting between rows",
+        "editing locked copy to equalize lines",
+        "strong background texture through type",
+        "invented health outcomes"
+      ],
+      "source_sha256": "bc95f85d206f56afc9d5cffdeaa8fe3ddfe72b9e9a6e613daee4f6978564cf5e",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c04.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c04.jpg"
+    },
+    {
+      "case_id": "PP-B03-C06",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b03-c06.jpg",
+      "actual_pixels": [
+        1600,
+        2000
+      ],
+      "observed": {
+        "methods": [
+          "three_column_intensity_card",
+          "same_length_progress_track",
+          "colored_large_range",
+          "short_medium_full_fill"
+        ],
+        "alignment": "category, range, bar and body rows align across three columns",
+        "color": "blue, green, red levels; white type and border",
+        "is_numbered_process": false,
+        "visual_estimates": {
+          "panel_width_pct_canvas_width": 90,
+          "bar_width_pct_canvas_width": 23
+        }
+      },
+      "suggested_prompt": "三个等宽列依次放类别、大数值、强度条和说明；三条总长相同，以填充长度表示低中高，数值与填充同色，各层起始位置分别对齐，保持固定文字完整。",
+      "common_misuse": [
+        "changing every visual variable at once",
+        "converting ranges into invented percentages",
+        "treating levels as numbered instructions"
+      ],
+      "source_sha256": "e1bb052a55297b9e15d6c3dc83d90385846e04ae84ed4677922d0065df83dd87",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c06.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c06.jpg"
+    },
+    {
+      "case_id": "PP-B05-C10",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b05-c10.jpg",
+      "actual_pixels": [
+        1611,
+        1593
+      ],
+      "observed": {
+        "methods": [
+          "blurred_translucent_metric_card",
+          "solid_small_heart_icon",
+          "large_number_small_unit",
+          "horizontal_dashed_leader"
+        ],
+        "background": "window greenery color enters cards but detail softened",
+        "alignment": "same-width stacked cards; unit lower edge near numeral lower edge; caption beneath",
+        "cyan_endpoint_observed": false,
+        "visual_estimates": {
+          "card_width_pct_canvas_width": "23-24"
+        }
+      },
+      "suggested_prompt": "右侧纵向排同宽毛玻璃参数卡，透出背景主色并柔化纹理；数字最大、单位缩小且下缘对齐、说明在下，小型实心语义图标作为强调；虚线只连接有依据的参数来源位置。",
+      "common_misuse": [
+        "transparent card without contrast control",
+        "inventing cyan endpoints as an observation",
+        "copying heart rate or load value",
+        "leader attached to unrelated part"
+      ],
+      "source_sha256": "6622a00861477acf216c47707cef833b44801deeccf3fb06615448ea2ceadfda",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b05-c10.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b05-c10.jpg"
+    },
+    {
+      "case_id": "PP-B06-C01",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b06-c01.jpg",
+      "actual_pixels": [
+        1600,
+        1600
+      ],
+      "observed": {
+        "methods": [
+          "source_rectangle_for_detail_window",
+          "orthogonal_dotted_leader",
+          "cyan_endpoint",
+          "short_internal_button_callout",
+          "light_translucent_label"
+        ],
+        "alignment": "left and right detail windows approximately mirrored around main display",
+        "limitation_observed": "white dotted leaders lose contrast on pale background in places",
+        "visual_estimates": {
+          "detail_window_width_pct_canvas_width": "17-18",
+          "bottom_label_width_pct_canvas_width": "15-16"
+        }
+      },
+      "suggested_prompt": "用虚线矩形界定原部件取样范围，折线连到外侧放大窗；普通标签以小圆点落在真实部件上再短折线引出，避免线条交叉或穿字；局部窗保留来源按钮数量和结构，按背景切换引线明暗。",
+      "common_misuse": [
+        "detail window without visible source",
+        "inventing controls",
+        "crossing leaders",
+        "copying low-contrast leader colors"
+      ],
+      "source_sha256": "0464aa12e399e763e98646aefa9c642301bc5cd1694bb34ec1109eb37683e8dc",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b06-c01.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b06-c01.jpg"
+    },
+    {
+      "case_id": "PP-B06-C10",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b06-c10.jpg",
+      "actual_pixels": [
+        1600,
+        1600
+      ],
+      "observed": {
+        "methods": [
+          "circular_detail_window",
+          "cyan_circle_frame",
+          "orthogonal_dashed_source_line",
+          "pivot_arc_arrow",
+          "incline_fan_lines",
+          "three_feature_groups"
+        ],
+        "alignment": "detail image above centered label inside circular window; bottom icon and percent share row with caption below",
+        "source": "rear incline adjustment part",
+        "is_numbered_process": false
+      },
+      "suggested_prompt": "将真实调节部件放入圆形局部窗，图上字下，圆点端点和直角虚线连接来源；弧箭头围绕有资料支持的转轴表现真实调节方向。底部档位组统一图标、数字和说明层级，不把坡度百分比写成角度。",
+      "common_misuse": [
+        "arc around whole machine",
+        "wrong pivot or direction",
+        "invented mechanism",
+        "converting percent to degrees",
+        "claiming steps observed"
+      ],
+      "source_sha256": "a94d1cd1413a662667741cf347c0d39dd9b3fb7f422bef533dccc3e9208f9f8f",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b06-c10.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b06-c10.jpg"
+    },
+    {
+      "case_id": "PP-B07-C02",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b07-c02.jpg",
+      "actual_pixels": [
+        1600,
+        2010
+      ],
+      "observed": {
+        "methods": [
+          "solid_elbow_leader",
+          "white_center_cyan_outline_endpoint",
+          "heading_and_subtitle_above_line",
+          "structural_part_callout"
+        ],
+        "alignment": "horizontal line sits below label; one main diagonal bend connects each part",
+        "arrowhead_present": false,
+        "visual_estimates": {
+          "endpoint_diameter_pct_canvas_width": 1
+        }
+      },
+      "suggested_prompt": "细实线从目标部件上的小圆点斜向空位再转为水平标签线，圆点用强调色外圈和浅色中心；标题粗、说明细，置于线段上方，每标签只指一个部件，所有路径不交叉。",
+      "common_misuse": [
+        "direction arrows replacing locator dots",
+        "oversized endpoint",
+        "several labels sharing vague source",
+        "invented internal structure"
+      ],
+      "source_sha256": "f9bbc204bd4afbcf505b1c1d5b39c7159c6607023bda5f0102539f666e0bf0c4",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c02.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c02.jpg"
+    },
+    {
+      "case_id": "PP-B07-C05",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b07-c05.jpg",
+      "actual_pixels": [
+        1605,
+        2010
+      ],
+      "observed": {
+        "methods": [
+          "surface_conforming_width_annotation",
+          "white_dashed_region_edges",
+          "cyan_surface_highlight",
+          "double_direction_chevrons"
+        ],
+        "placement": "front of walking surface ahead of shoes",
+        "perspective": "number and arrows follow belt plane rather than horizontal UI",
+        "measurement_axis": "crosswise width"
+      },
+      "suggested_prompt": "虚线沿实际可用区域两侧边界延伸，轻铺透明强调色；把用户提供的宽度值和双向箭头贴合前部平面透视，箭头横跨宽度方向且不超出边界，避开鞋并遵循前景遮挡。",
+      "common_misuse": [
+        "width label aligned with length",
+        "measurement endpoints outside true area",
+        "flat horizontal UI on perspective surface",
+        "copying example 16.5 inch value"
+      ],
+      "source_sha256": "6a84a147a7ecf59e3fbee4d16fb8e36c8f680484ac42b7e5112ab5bbd0688869",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c05.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c05.jpg"
+    },
+    {
+      "case_id": "PP-B05-C05",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b05-c05.jpg",
+      "actual_pixels": [
+        1611,
+        1593
+      ],
+      "observed": {
+        "methods": [
+          "three_column_comparison",
+          "solid_circle_check_and_cross",
+          "horizontal_row_separators",
+          "highlighted_center_column"
+        ],
+        "alignment": "badges centered vertically with single-line labels; badge centers and text starts align within each column",
+        "color": "center cyan disc with pale thick check; side gray discs with pale thick crosses",
+        "visual_estimates": {
+          "badge_diameter_pct_canvas_width": "3-4"
+        },
+        "caution": "source crosses include positioning judgments; not all are literal missing-function evidence"
+      },
+      "suggested_prompt": "对照区保持同列同产品、同行同维度，圆底勾叉放在固定文案左侧，圆心与文字行中心对齐；强调列用强调色圆底和浅色勾，其余用中性圆底和浅色叉，行间细线分隔；勾叉只用于用户给出的明确符合与不符合关系。",
+      "common_misuse": [
+        "negative judgments inferred from neutral product categories",
+        "unequal badge size and label alignment",
+        "low symbol contrast",
+        "copying brand conclusions"
+      ],
+      "source_sha256": "97ee578447a95dc56ee07beaf76410b3fc8a6b4e02ce58b7c06aad033638c5e3",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b05-c05.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b05-c05.jpg"
+    },
+    {
+      "case_id": "PP-B02-C03",
+      "asset_path": "assets/cases/pp-20261021/modules/pp-b02-c03.jpg",
+      "actual_pixels": [
+        1607,
+        2007
+      ],
+      "observed": {
+        "methods": [
+          "two_by_two_numbered_information_grid",
+          "outline_number_circle",
+          "bold_heading_smaller_description",
+          "detail_image_beside_information"
+        ],
+        "alignment": "circle center near heading-line center; heading and description share text left edge",
+        "visual_estimates": {
+          "circle_diameter_pct_canvas_width": "4-5"
+        },
+        "is_numbered_process": false,
+        "placeholder_observed": "XX in"
+      },
+      "suggested_prompt": "细节近景旁放 2 × 2 信息网格，各项使用同尺寸空心编号圆圈，圆圈对齐粗体标题行中心，较小说明与标题左对齐；数字仅作信息索引，不加流程箭头；用户未提供的参数不能以参考占位文本充当事实。",
+      "common_misuse": [
+        "misrepresenting information numbers as sequential steps",
+        "oversized circles",
+        "copying placeholder as data",
+        "long descriptions overlapping adjacent cells"
+      ],
+      "source_sha256": "a1a4729d54a3d007a1b365d40c26a9095a197d0e2a8cdaa4f9e417817ea6d67a",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b02-c03.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b02-c03.jpg"
+    }
+  ],
+  "not_observed_in_selected_samples": [
+    "numbered_step_process"
+  ],
+  "new_design_suggestions_only": [
+    {
+      "method": "numbered_three_step_layout",
+      "inspiration_cases": [
+        "PP-B02-C03",
+        "PP-B03-C06",
+        "PP-B06-C10"
+      ],
+      "condition": "only for real sequential operation supplied by user; replace parallel-information meaning explicitly",
+      "not_an_observation": true
+    }
+  ],
+  "path_base": "skill_root"
+}

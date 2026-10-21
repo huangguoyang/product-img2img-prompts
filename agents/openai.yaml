@@ -1,0 +1,4 @@
+interface:
+  display_name: "产品图生图提示词优化"
+  short_description: "按卖点匹配多图素材，学习文字位置、字号层级、图标标注与光效，输出图生图提示词"
+  default_prompt: "使用 $product-img2img-prompts，根据我上传的多张产品图、人物图、参考图及卖点和固定文案，逐图列出上传顺序与引用用途，输出可独立复制到图生图工具的完整提示词。"

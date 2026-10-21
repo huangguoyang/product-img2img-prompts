@@ -1,0 +1,1020 @@
+{
+  "study": "PP typography layout, visible glyph scale, and supporting labels",
+  "version": 1,
+  "date": "2026-10-21",
+  "cases_count": 6,
+  "measured_cases_count": 4,
+  "text_rois_count": 21,
+  "limits": [
+    "可见字形像素包围盒不是em/CSS字号/pt",
+    "字体家族未识别",
+    "目测估计与像素测量分别标记",
+    "外部工具图生图效果未验证",
+    "英文案例迁移中文时应重新安排字数与换行"
+  ],
+  "measurement_method": {
+    "coordinates": "原始模块图像素，左上原点，[x0,y0,x1,y1)，右下边界排除",
+    "threshold": "深底白字每通道>=220；浅底深字每通道<=70或80；每ROI保存具体规则",
+    "bbox": "阈值掩模前景最小轴对齐包围盒",
+    "verification": "已查看ROI和二值掩模；正文行ROI已修正为不截断降部",
+    "script": "scripts/verify_pp_type_measurements.py",
+    "raw_measurements": "embedded in cases[].measurements",
+    "contact_sheet": "assets/cases/pp-20261021/type-study/measurement-contact.png",
+    "contact_sheet_note": "ROI previews are resized independently for inspection; do not compare their display sizes.",
+    "contact_sheet_sha256": "27fe08a96e0f6f65739a57333b2c13995bb80f9e41dd90275b27e7255b6438a3",
+    "contact_sheet_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/measurement-contact.png",
+    "contact_sheet_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/measurement-contact.png"
+  },
+  "cases": [
+    {
+      "case_id": "PP-B07-C08",
+      "source_size_px": [
+        1605,
+        2010
+      ],
+      "layout": {
+        "placement": "独立顶端浅灰标题带；三张场景各有左上角标",
+        "title_band_height_pct_estimate": 16,
+        "headline_width_pct_measured": 56.39,
+        "subhead_width_pct_measured": 57.07,
+        "alignment": "标题、副文以同一约48%W中轴居中；角标依各场景左上对齐",
+        "avoidance": "标签避开面部、手部操作与轮子"
+      },
+      "type": {
+        "headline": "黑色粗无衬线，字形86px",
+        "subhead": "黑色常规，字形49px",
+        "parameter": "无独立读数",
+        "label": "黑色常规，字形24px；半透明浅色圆角底",
+        "unit": "不适用",
+        "family": "未识别具体字体家族"
+      },
+      "spacing": {
+        "headline_to_subhead_visible_gap_px_measured": 33,
+        "same_level_tag_padding": "目测一致；Built-In Wheels左侧内边距约30px",
+        "tag_width_rule": "随词长调整，保持同字高与边距"
+      },
+      "height_ratios": {
+        "headline_to_subhead_measured": 1.755,
+        "label_to_headline_measured": 0.279
+      },
+      "transfer": "顶部文字区与照片分开；同级角标用统一字高/内边距、随文本伸缩框宽。",
+      "source_file": "assets/cases/pp-20261021/modules/pp-b07-c08.jpg",
+      "inspection": {
+        "full_image_opened_with_view_image": true,
+        "image_scope": "指定案例整图",
+        "measured_roi_and_mask_visually_checked": true
+      },
+      "measurements": [
+        {
+          "case_id": "PP-B07-C08",
+          "key": "headline",
+          "text": "Ready Out of the Box",
+          "source_size_px": [
+            1605,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            285,
+            70,
+            1260,
+            190
+          ],
+          "pixel_rule": "all RGB channels <= 80",
+          "glyph_bbox_xyxy_exclusive": [
+            318,
+            92,
+            1223,
+            178
+          ],
+          "visible_glyph_height_px": 86,
+          "visible_glyph_width_px": 905,
+          "height_over_image_width": 0.053583,
+          "height_over_image_height": 0.042786,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c08__headline__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c08__headline__mask.png",
+          "roi_file_sha256": "3a206c3ce7461e1e41347b0b7399ba77a1e79e12ce3e39c8c9b55c70a25f5de0",
+          "mask_file_sha256": "7551383bff3075caf57ee18c617bf56524dbb7bd1286b234d51923fbded5e4e7",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__headline__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__headline__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__headline__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__headline__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C08",
+          "key": "subhead",
+          "text": "Plug in, walk, then roll it out of the way.",
+          "source_size_px": [
+            1605,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            285,
+            195,
+            1260,
+            270
+          ],
+          "pixel_rule": "all RGB channels <= 80",
+          "glyph_bbox_xyxy_exclusive": [
+            311,
+            211,
+            1227,
+            260
+          ],
+          "visible_glyph_height_px": 49,
+          "visible_glyph_width_px": 916,
+          "height_over_image_width": 0.03053,
+          "height_over_image_height": 0.024378,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c08__subhead__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c08__subhead__mask.png",
+          "roi_file_sha256": "5d03a2928b4c5c46a0d9383010e9ad3b84769dfa51c47cc02ceb072f6d49a49d",
+          "mask_file_sha256": "9ce04d7950a9bd33ed2b367c3f8c61de5d5d33018d0f89d2d6d32b6662a80436",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__subhead__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__subhead__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__subhead__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__subhead__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C08",
+          "key": "label",
+          "text": "Built-In Wheels",
+          "source_size_px": [
+            1605,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            52,
+            370,
+            302,
+            425
+          ],
+          "pixel_rule": "all RGB channels <= 80",
+          "glyph_bbox_xyxy_exclusive": [
+            66,
+            389,
+            289,
+            413
+          ],
+          "visible_glyph_height_px": 24,
+          "visible_glyph_width_px": 223,
+          "height_over_image_width": 0.014953,
+          "height_over_image_height": 0.01194,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c08__label__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c08__label__mask.png",
+          "roi_file_sha256": "ccf5820619956b9c92afe187d42cc82d310d19807ba5f216bd591622ba1ca6fc",
+          "mask_file_sha256": "3b07ddf7573fc521396f82b095e456608154b4a5549bd333666f8737f636248f",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__label__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__label__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__label__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c08__label__mask.png"
+        }
+      ],
+      "source_sha256": "0ffe670bc68cab84361bc04d16b3f3ce14873dbff17c480c1fed89fc33c701d8",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c08.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c08.jpg"
+    },
+    {
+      "case_id": "PP-B07-C02",
+      "source_size_px": [
+        1600,
+        2010
+      ],
+      "layout": {
+        "placement": "顶部两行居中标题，下方副文；左部件说明，右独立参数，产品占下部",
+        "headline_line1_width_pct_measured": 57.94,
+        "subhead_width_pct_measured": 60.06,
+        "left_callout_start_x_pct_measured": 6.25,
+        "parameter_start_x_pct_measured": 74.75,
+        "alignment": "标题居中；左标注两行共用x=100；读数及单位底线相同",
+        "avoidance": "文字保持水平，折线承担指向；文字不沿折线变形"
+      },
+      "type": {
+        "headline": "两行白色粗体，均69px",
+        "subhead": "白色常规47px",
+        "callout_title": "Welded粗体36px",
+        "callout_description": "One-Piece Build常规24px",
+        "parameter": "106粗体71px；Solid Frame常规37px",
+        "unit": "lb高70px，几乎与数字同高且同底线",
+        "family": "未识别具体字体家族"
+      },
+      "spacing": {
+        "headline_line_top_pitch_px_measured": 96,
+        "headline_interline_visible_gap_px_measured": 27,
+        "headline_to_subhead_visible_gap_px_measured": 46,
+        "callout_title_to_description_gap_px_measured": 35,
+        "number_to_caption_gap_px_measured": 36
+      },
+      "height_ratios": {
+        "headline_to_subhead_measured": 1.468,
+        "callout_title_to_description_measured": 1.5,
+        "unit_to_number_measured": 0.986,
+        "number_to_caption_measured": 1.919
+      },
+      "transfer": "标题内部行距紧于标题到说明组距；读数可用等高单位；白色细折线加青色端点连接具体部件。",
+      "source_file": "assets/cases/pp-20261021/modules/pp-b07-c02.jpg",
+      "inspection": {
+        "full_image_opened_with_view_image": true,
+        "image_scope": "指定案例整图",
+        "measured_roi_and_mask_visually_checked": true
+      },
+      "measurements": [
+        {
+          "case_id": "PP-B07-C02",
+          "key": "headline_line_1",
+          "text": "Rock Solid. Walk With",
+          "source_size_px": [
+            1600,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            300,
+            65,
+            1300,
+            175
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            337,
+            92,
+            1264,
+            161
+          ],
+          "visible_glyph_height_px": 69,
+          "visible_glyph_width_px": 927,
+          "height_over_image_width": 0.043125,
+          "height_over_image_height": 0.034328,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_1__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_1__mask.png",
+          "roi_file_sha256": "f7558c36b592c99bd0b57463d2fa0b619d8d44413afc6d3dc010d27c899ca7b4",
+          "mask_file_sha256": "ffa585e7baa654c05b4985d457c02d03eea646b196ad0e97bd4aaf0965707da9",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_1__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_1__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_1__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_1__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C02",
+          "key": "headline_line_2",
+          "text": "Confidence.",
+          "source_size_px": [
+            1600,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            480,
+            175,
+            1110,
+            275
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            540,
+            188,
+            1059,
+            257
+          ],
+          "visible_glyph_height_px": 69,
+          "visible_glyph_width_px": 519,
+          "height_over_image_width": 0.043125,
+          "height_over_image_height": 0.034328,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_2__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_2__mask.png",
+          "roi_file_sha256": "e1e2703cb63420e7c8bd493914f916698d803519ec30cf1e42471ffdf6a63dc8",
+          "mask_file_sha256": "deae649d3b20e7e6c25bfe24458406fb5b5799f74c59bdfc767583fbfd624889",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_2__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_2__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_2__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__headline_line_2__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C02",
+          "key": "subhead",
+          "text": "No wobble. No squeak. Won’t quit on you",
+          "source_size_px": [
+            1600,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            300,
+            285,
+            1310,
+            365
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            320,
+            303,
+            1281,
+            350
+          ],
+          "visible_glyph_height_px": 47,
+          "visible_glyph_width_px": 961,
+          "height_over_image_width": 0.029375,
+          "height_over_image_height": 0.023383,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__subhead__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__subhead__mask.png",
+          "roi_file_sha256": "9ef367f195fa2cfe5c2099c9f9fcc03da54a0b907262336d5348d54fb7fefdeb",
+          "mask_file_sha256": "6b8471dd8eb9e12b52da80b4a58402060a881878b925ad8396b0724501f93c48",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__subhead__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__subhead__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__subhead__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__subhead__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C02",
+          "key": "callout_title",
+          "text": "Welded",
+          "source_size_px": [
+            1600,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            80,
+            485,
+            330,
+            565
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            100,
+            514,
+            277,
+            550
+          ],
+          "visible_glyph_height_px": 36,
+          "visible_glyph_width_px": 177,
+          "height_over_image_width": 0.0225,
+          "height_over_image_height": 0.01791,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__callout_title__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__callout_title__mask.png",
+          "roi_file_sha256": "8e834e8b5a4a1cf1c8473f7b15201241b07f988542319e4ca913beff6bff7986",
+          "mask_file_sha256": "c685c8cb117b6596b9bcd73aff58d9eaa8bf660ee6a493e0c2d3749e61e64be6",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__callout_title__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__callout_title__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__callout_title__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__callout_title__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C02",
+          "key": "callout_description",
+          "text": "One-Piece Build",
+          "source_size_px": [
+            1600,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            80,
+            570,
+            355,
+            625
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            100,
+            585,
+            338,
+            609
+          ],
+          "visible_glyph_height_px": 24,
+          "visible_glyph_width_px": 238,
+          "height_over_image_width": 0.015,
+          "height_over_image_height": 0.01194,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__callout_description__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__callout_description__mask.png",
+          "roi_file_sha256": "dc247470dff19035ccce0e067aa3e1036c1eb8a2ac6cfdbae20c1945c333c631",
+          "mask_file_sha256": "694bc2a8bd552a8501b6b92fbcce1e993ca1bd619f73219bbcce3d7d2a27dd67",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__callout_description__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__callout_description__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__callout_description__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__callout_description__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C02",
+          "key": "numeric",
+          "text": "106",
+          "source_size_px": [
+            1600,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            1180,
+            450,
+            1365,
+            560
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            1196,
+            472,
+            1357,
+            543
+          ],
+          "visible_glyph_height_px": 71,
+          "visible_glyph_width_px": 161,
+          "height_over_image_width": 0.044375,
+          "height_over_image_height": 0.035323,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__numeric__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__numeric__mask.png",
+          "roi_file_sha256": "20a8b497ac3a96b4ffa1542616b7eec7aa309838a901a34032e40a22493e5548",
+          "mask_file_sha256": "4ade6cd20ef13b092bb334819e6b3f8bc76b0db93b7b0b08d64f49c97027fe51",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__numeric__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__numeric__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__numeric__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__numeric__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C02",
+          "key": "unit",
+          "text": "lb",
+          "source_size_px": [
+            1600,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            1370,
+            450,
+            1480,
+            560
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            1393,
+            473,
+            1467,
+            543
+          ],
+          "visible_glyph_height_px": 70,
+          "visible_glyph_width_px": 74,
+          "height_over_image_width": 0.04375,
+          "height_over_image_height": 0.034826,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__unit__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__unit__mask.png",
+          "roi_file_sha256": "4d98080d7d2e7b6b06088c4ff808af7017d1859b94fffc0234f4f6b772b74e4e",
+          "mask_file_sha256": "af5f167960b7e9fe75617375ecbea8e251fc1a7f37fc8c11e62054c2abf2152c",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__unit__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__unit__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__unit__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__unit__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C02",
+          "key": "numeric_caption",
+          "text": "Solid Frame",
+          "source_size_px": [
+            1600,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            1175,
+            565,
+            1490,
+            635
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            1194,
+            579,
+            1467,
+            616
+          ],
+          "visible_glyph_height_px": 37,
+          "visible_glyph_width_px": 273,
+          "height_over_image_width": 0.023125,
+          "height_over_image_height": 0.018408,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__numeric_caption__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c02__numeric_caption__mask.png",
+          "roi_file_sha256": "655cdb78a13c45ba84d13b18c9a0dfefa4227cf1938281d2b808703e926bf898",
+          "mask_file_sha256": "4b30892508a5c422f5e7fc1621d9dff5b1c81fd5f18b19290e9ea4ca0b327189",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__numeric_caption__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__numeric_caption__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__numeric_caption__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c02__numeric_caption__mask.png"
+        }
+      ],
+      "source_sha256": "f9bbc204bd4afbcf505b1c1d5b39c7159c6607023bda5f0102539f666e0bf0c4",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c02.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c02.jpg"
+    },
+    {
+      "case_id": "PP-B07-C01",
+      "source_size_px": [
+        1605,
+        2010
+      ],
+      "layout": {
+        "placement": "上方英雄图有背景巨字、两侧型号，下部为一大卡+一横卡+两小卡",
+        "hero_slogan_x_pct_estimate": [
+          5,
+          96
+        ],
+        "hero_slogan_y_pct_estimate": [
+          13,
+          21
+        ],
+        "left_card_width_pct_estimate": 29,
+        "right_info_area_width_pct_estimate": 60,
+        "alignment": "英雄区文字围人物分左右；左下卡三行居中；右侧按图文分区对齐",
+        "avoidance": "人物局部遮背景短标语；型号和参数不遮挡"
+      },
+      "type": {
+        "background_display": "Built白色巨字161px",
+        "model": "NovaWalk常规62px",
+        "parameter": "400 lb粗体37px",
+        "caption": "Max Capacity常规38px",
+        "description": "Built for steady walking常规31px",
+        "unit": "此测量未分离400与lb，不给单位精确比",
+        "family": "未识别具体字体家族"
+      },
+      "spacing": {
+        "numeric_to_caption_visible_gap_px_measured": 37,
+        "caption_to_description_visible_gap_px_measured": 24,
+        "description_to_evidence_image": "目测大于文本组内间距"
+      },
+      "height_ratios": {
+        "display_to_model_measured": 2.597,
+        "numeric_to_caption_measured": 0.974,
+        "description_to_numeric_measured": 0.838
+      },
+      "transfer": "英雄巨字与卡内文字各自建立层级；层级可由粗细/位置形成，不能按三个层级固定递减字高；降部影响包围盒高度。",
+      "source_file": "assets/cases/pp-20261021/modules/pp-b07-c01.jpg",
+      "inspection": {
+        "full_image_opened_with_view_image": true,
+        "image_scope": "指定案例整图",
+        "measured_roi_and_mask_visually_checked": true
+      },
+      "measurements": [
+        {
+          "case_id": "PP-B07-C01",
+          "key": "display_word",
+          "text": "Built",
+          "source_size_px": [
+            1605,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            45,
+            235,
+            520,
+            435
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            76,
+            253,
+            506,
+            414
+          ],
+          "visible_glyph_height_px": 161,
+          "visible_glyph_width_px": 430,
+          "height_over_image_width": 0.100312,
+          "height_over_image_height": 0.0801,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__display_word__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__display_word__mask.png",
+          "roi_file_sha256": "1337da803cc84500a26cb9b231f95c559b08bcdf1c2012e0e6b3cb6320dec23e",
+          "mask_file_sha256": "e658cb776b15ecbf8cb505b5eed177db8358777dd189c9f089b5bb1ba0411dc6",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__display_word__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__display_word__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__display_word__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__display_word__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C01",
+          "key": "model",
+          "text": "NovaWalk",
+          "source_size_px": [
+            1605,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            45,
+            475,
+            500,
+            570
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            76,
+            491,
+            470,
+            553
+          ],
+          "visible_glyph_height_px": 62,
+          "visible_glyph_width_px": 394,
+          "height_over_image_width": 0.038629,
+          "height_over_image_height": 0.030846,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__model__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__model__mask.png",
+          "roi_file_sha256": "91f4bd64920b0ee8fb4d0297dba4a3a2f17ed4ab50a29c9dd9064a2f00477e23",
+          "mask_file_sha256": "5ce62495aa6edbaeff56e62d951006c811a13a187b3cae88f08073746d27c7c8",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__model__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__model__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__model__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__model__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C01",
+          "key": "card_numeric",
+          "text": "400 lb",
+          "source_size_px": [
+            1605,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            210,
+            1295,
+            410,
+            1370
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            229,
+            1314,
+            380,
+            1351
+          ],
+          "visible_glyph_height_px": 37,
+          "visible_glyph_width_px": 151,
+          "height_over_image_width": 0.023053,
+          "height_over_image_height": 0.018408,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__card_numeric__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__card_numeric__mask.png",
+          "roi_file_sha256": "0101542bbcb23f1542c938bd077797f41ceaf0d24f20b8a26edec06920a031eb",
+          "mask_file_sha256": "428701fbebb5e55b428bd7805988e2b76954f38a082f559612d54f057b25942d",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_numeric__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_numeric__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_numeric__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_numeric__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C01",
+          "key": "card_caption",
+          "text": "Max Capacity",
+          "source_size_px": [
+            1605,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            150,
+            1375,
+            455,
+            1435
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            177,
+            1388,
+            433,
+            1426
+          ],
+          "visible_glyph_height_px": 38,
+          "visible_glyph_width_px": 256,
+          "height_over_image_width": 0.023676,
+          "height_over_image_height": 0.018905,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__card_caption__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__card_caption__mask.png",
+          "roi_file_sha256": "5146cd1a2978d9bf2d29aa5474ce63b99d7de030c5e797e68cb6068cf6e11fac",
+          "mask_file_sha256": "9dd272cc011c93b0eab873e5356448687f1df0781622f766327ff9d73598a369",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_caption__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_caption__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_caption__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_caption__mask.png"
+        },
+        {
+          "case_id": "PP-B07-C01",
+          "key": "card_description",
+          "text": "Built for steady walking",
+          "source_size_px": [
+            1605,
+            2010
+          ],
+          "roi_xyxy_exclusive": [
+            110,
+            1440,
+            500,
+            1495
+          ],
+          "pixel_rule": "all RGB channels >= 220",
+          "glyph_bbox_xyxy_exclusive": [
+            131,
+            1450,
+            478,
+            1481
+          ],
+          "visible_glyph_height_px": 31,
+          "visible_glyph_width_px": 347,
+          "height_over_image_width": 0.019315,
+          "height_over_image_height": 0.015423,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__card_description__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b07-c01__card_description__mask.png",
+          "roi_file_sha256": "5f341e046116f93507798d1102f89b36b3348b093f4e65073b0dcbf2a57eb511",
+          "mask_file_sha256": "8623bba0c201e4f38de3cdd597704b0d60bf8c490031fcdca51906d779e9065b",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_description__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_description__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_description__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b07-c01__card_description__mask.png"
+        }
+      ],
+      "source_sha256": "024e35dee1db58b8885dc4e96ab94236312c2e6609eb7deb91ce88f2182c3f6a",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c01.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b07-c01.jpg"
+    },
+    {
+      "case_id": "PP-B01-C01",
+      "source_size_px": [
+        1605,
+        2011
+      ],
+      "layout": {
+        "placement": "上部产品前景加发光点阵背景词；左侧噪声标尺；下部正式技术标题/正文/三卡",
+        "formal_text_start_x_pct_measured": 3.93,
+        "formal_headline_width_pct_measured": 78.82,
+        "card_width_pct_estimate": 30,
+        "alignment": "正式标题正文共左边线；三卡标题共上沿及左内边距",
+        "avoidance": "点阵背景词可倾斜/遮挡/出画；正式技术标题与数值必须完整可读"
+      },
+      "type": {
+        "decorative_display": "发光点阵，复杂遮挡，未测量",
+        "headline": "黑粗体82px",
+        "body": "黑常规，两行均43px",
+        "parameter": "45为40px",
+        "unit": "dB为40px，与数字同可见字高",
+        "card_title": "青色粗关键词+部分黑色续句，语义换行",
+        "family": "未识别具体字体家族"
+      },
+      "spacing": {
+        "headline_to_body_visible_gap_px_measured": 29,
+        "body_line_top_pitch_px_measured": 54,
+        "body_interline_visible_gap_px_measured": 11
+      },
+      "height_ratios": {
+        "headline_to_body_measured": 1.907,
+        "unit_to_number_measured": 1.0
+      },
+      "transfer": "背景字与信息字分开处理；正式标题约正文两倍视觉高度；数字+单位可等高；窄卡按语义换行，不以缩小一切解决。",
+      "source_file": "assets/cases/pp-20261021/modules/pp-b01-c01.jpg",
+      "inspection": {
+        "full_image_opened_with_view_image": true,
+        "image_scope": "指定案例整图",
+        "measured_roi_and_mask_visually_checked": true
+      },
+      "measurements": [
+        {
+          "case_id": "PP-B01-C01",
+          "key": "main_title",
+          "text": "MERACH TriGlide Drive System",
+          "source_size_px": [
+            1605,
+            2011
+          ],
+          "roi_xyxy_exclusive": [
+            40,
+            1240,
+            1360,
+            1360
+          ],
+          "pixel_rule": "all RGB channels <= 70",
+          "glyph_bbox_xyxy_exclusive": [
+            65,
+            1268,
+            1330,
+            1350
+          ],
+          "visible_glyph_height_px": 82,
+          "visible_glyph_width_px": 1265,
+          "height_over_image_width": 0.05109,
+          "height_over_image_height": 0.040776,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__main_title__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__main_title__mask.png",
+          "roi_file_sha256": "19074a47f3beebaf17bb059ea50aef90004a7ce89e858fcda27534ea45bcd7cb",
+          "mask_file_sha256": "20f3e4bdbed01f46e6138675684dc37633dd3d72e9379d35d6f98f3e99511e52",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__main_title__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__main_title__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__main_title__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__main_title__mask.png"
+        },
+        {
+          "case_id": "PP-B01-C01",
+          "key": "body_line_1",
+          "text": "Leise, gleichmäßige Kraftübertragung vom",
+          "source_size_px": [
+            1605,
+            2011
+          ],
+          "roi_xyxy_exclusive": [
+            40,
+            1360,
+            1000,
+            1426
+          ],
+          "pixel_rule": "all RGB channels <= 70",
+          "glyph_bbox_xyxy_exclusive": [
+            63,
+            1379,
+            972,
+            1422
+          ],
+          "visible_glyph_height_px": 43,
+          "visible_glyph_width_px": 909,
+          "height_over_image_width": 0.026791,
+          "height_over_image_height": 0.021382,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_1__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_1__mask.png",
+          "roi_file_sha256": "ed16ce7e298c0e1c90a22d41066ad3308c8ee5a61c4404c56008bb5cbdcf33a3",
+          "mask_file_sha256": "d4b751b9170539add650299e4f203152326be1c35bfe97e8dc63130f45609734",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_1__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_1__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_1__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_1__mask.png"
+        },
+        {
+          "case_id": "PP-B01-C01",
+          "key": "body_line_2",
+          "text": "Pedal bis zum Schwungrad.",
+          "source_size_px": [
+            1605,
+            2011
+          ],
+          "roi_xyxy_exclusive": [
+            40,
+            1427,
+            750,
+            1485
+          ],
+          "pixel_rule": "all RGB channels <= 70",
+          "glyph_bbox_xyxy_exclusive": [
+            63,
+            1433,
+            650,
+            1476
+          ],
+          "visible_glyph_height_px": 43,
+          "visible_glyph_width_px": 587,
+          "height_over_image_width": 0.026791,
+          "height_over_image_height": 0.021382,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_2__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_2__mask.png",
+          "roi_file_sha256": "6a4ddf0c25abc4780f1a4ff21d22a856b5bdc32209ade393f54e805c3bc3d57d",
+          "mask_file_sha256": "2a85fdab8275e9c70ae0e40fdf09cac225206fa7dbe73389872d0f0889cc6ade",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_2__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_2__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_2__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__body_line_2__mask.png"
+        },
+        {
+          "case_id": "PP-B01-C01",
+          "key": "db_numeric",
+          "text": "45",
+          "source_size_px": [
+            1605,
+            2011
+          ],
+          "roi_xyxy_exclusive": [
+            185,
+            695,
+            268,
+            770
+          ],
+          "pixel_rule": "all RGB channels <= 70",
+          "glyph_bbox_xyxy_exclusive": [
+            197,
+            713,
+            263,
+            753
+          ],
+          "visible_glyph_height_px": 40,
+          "visible_glyph_width_px": 66,
+          "height_over_image_width": 0.024922,
+          "height_over_image_height": 0.019891,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__db_numeric__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__db_numeric__mask.png",
+          "roi_file_sha256": "044adeeb9fec42477fbda62de1a4505105bc69b7dc7d782e85104784580b3ea8",
+          "mask_file_sha256": "8150496f19e9cd0f720284819db4cd95281358b46a58a175d2c40209c937be01",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__db_numeric__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__db_numeric__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__db_numeric__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__db_numeric__mask.png"
+        },
+        {
+          "case_id": "PP-B01-C01",
+          "key": "db_unit",
+          "text": "dB",
+          "source_size_px": [
+            1605,
+            2011
+          ],
+          "roi_xyxy_exclusive": [
+            268,
+            695,
+            345,
+            770
+          ],
+          "pixel_rule": "all RGB channels <= 70",
+          "glyph_bbox_xyxy_exclusive": [
+            268,
+            713,
+            334,
+            753
+          ],
+          "visible_glyph_height_px": 40,
+          "visible_glyph_width_px": 66,
+          "height_over_image_width": 0.024922,
+          "height_over_image_height": 0.019891,
+          "roi_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__db_unit__roi.jpg",
+          "mask_file": "assets/cases/pp-20261021/type-study/pp-b01-c01__db_unit__mask.png",
+          "roi_file_sha256": "fd4757c0324bff650ff28ed4678a10309f964212533e4fee3357ae447f666552",
+          "mask_file_sha256": "eddaebe83e03d0a17f48014e34bc301ac8f3d32f54d9218925d55ea0c4ce855c",
+          "roi_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__db_unit__roi.jpg",
+          "roi_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__db_unit__roi.jpg",
+          "mask_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__db_unit__mask.png",
+          "mask_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/type-study/pp-b01-c01__db_unit__mask.png"
+        }
+      ],
+      "source_sha256": "1edc1a0397ad2fd4dcef9d802ed6f288e349da98f17ccbc676388bf46455190b",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b01-c01.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b01-c01.jpg"
+    },
+    {
+      "case_id": "PP-B05-C10",
+      "source_size_px": [
+        1611,
+        1593
+      ],
+      "measurement_status": "仅目测估计，复杂照片和卡片渐变未做字形像素测量",
+      "layout": {
+        "placement": "上方两行白标题+一行副文；主体居左中；两张半透明绿卡靠右上下堆叠",
+        "longest_title_width_pct_estimate": 90,
+        "header_total_height_pct_estimate": 22,
+        "card_width_pct_estimate": 24,
+        "card_height_pct_estimate": 16,
+        "card_gap_pct_height_estimate": 3,
+        "alignment": "标题居中；心形+数字+单位整组置于卡内中间，说明在下方；数字与单位同基线",
+        "avoidance": "卡片绕开人物和器材关键轮廓；读数水平不跟随虚线"
+      },
+      "type": {
+        "headline": "白色粗无衬线",
+        "subhead": "白常规，视觉字高目测为标题约六成",
+        "parameter": "101与136为粗数字",
+        "unit": "bpm与kg常规，视觉字高约数字55%-65%",
+        "icon": "橙红小心形在读数左侧，小于数字",
+        "caption": "常规说明，低于数字层级",
+        "family": "未识别具体字体家族"
+      },
+      "spacing": {
+        "principle": "图标/数字/单位先绑成读数组，整组与说明分开；两参数卡复用尺度/内边距"
+      },
+      "transfer": "数字主导的参数卡可缩单位至约六成并同基线；虚线只连接需要说明来源的读数。",
+      "do_not_copy": "白标题跨浅墙与亮窗处局部低对比；新图改用净底、压暗或轻渐变，不能照抄缺陷。",
+      "source_file": "assets/cases/pp-20261021/modules/pp-b05-c10.jpg",
+      "inspection": {
+        "full_image_opened_with_view_image": true,
+        "image_scope": "指定案例整图",
+        "measured_roi_and_mask_visually_checked": false
+      },
+      "measurements": [],
+      "source_sha256": "6622a00861477acf216c47707cef833b44801deeccf3fb06615448ea2ceadfda",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b05-c10.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b05-c10.jpg"
+    },
+    {
+      "case_id": "PP-B03-C04",
+      "source_size_px": [
+        1600,
+        2000
+      ],
+      "measurement_status": "仅目测估计，透明卡片/人体背景/发光未做字形像素测量",
+      "layout": {
+        "placement": "上方居中标题/副文，左右各三卡包围中央腿部与产品；列头BEFORE/AFTER胶囊",
+        "headline_width_pct_estimate": 79,
+        "subhead_width_pct_estimate": 66,
+        "card_column_width_pct_estimate": 29,
+        "row_gap_pct_height_estimate": 1,
+        "alignment": "对应行同上沿、同尺寸；图标后标题/正文共左边线；列头居中",
+        "avoidance": "中央人体可叠卡边，但不挡文字；光效避开卡片文字"
+      },
+      "type": {
+        "headline": "白粗体",
+        "subhead": "白常规",
+        "card_title": "白粗短标题，视觉字高约2.3%-2.7%W",
+        "card_body": "白常规两行，视觉字高约1.8%-2.1%W",
+        "icon": "直径约6%-7%W的浅圆底线描图标",
+        "column_badge": "左灰/右青底，白字同级",
+        "unit": "无数值单位",
+        "family": "未识别具体字体家族"
+      },
+      "spacing": {
+        "principle": "同卡内边距、同标题基准、相近两行正文；按语义配对，不按词长任意缩放"
+      },
+      "transfer": "对照卡固定图标-标题-解释顺序，颜色分状态；文字不发光，效果集中到产品/人体接触路径。",
+      "source_file": "assets/cases/pp-20261021/modules/pp-b03-c04.jpg",
+      "inspection": {
+        "full_image_opened_with_view_image": true,
+        "image_scope": "指定案例整图",
+        "measured_roi_and_mask_visually_checked": false
+      },
+      "measurements": [],
+      "source_sha256": "bc95f85d206f56afc9d5cffdeaa8fe3ddfe72b9e9a6e613daee4f6978564cf5e",
+      "source_raw_url": "https://raw.githubusercontent.com/huangguoyang/product-img2img-prompts/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c04.jpg",
+      "source_browser_url": "https://github.com/huangguoyang/product-img2img-prompts/blob/b0e1b1bea3de1fa841108fecb1e689cc8d4b28b7/assets/cases/pp-20261021/modules/pp-b03-c04.jpg"
+    }
+  ],
+  "path_base": "skill_root"
+}
